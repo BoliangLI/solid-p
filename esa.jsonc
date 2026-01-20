@@ -1,0 +1,9 @@
+{
+  "name": "vite-template-solid",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm build",
+  "assets": {
+    "directory": "./dist",
+    "notFoundStrategy": "singlePageApplication"
+  }
+}
