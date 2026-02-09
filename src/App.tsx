@@ -1,12 +1,14 @@
 import type { Component } from 'solid-js';
-import Comp from './Comp';
+import { Router, Route } from '@solidjs/router';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
 
 const App: Component = () => {
   return (
-    <>
-      <h1>Hello world!!!!</h1>
-      <Comp />
-    </>
+    <Router>
+      <Route path="/" component={Home} />
+      <Route path="/blog" component={Blog} />
+    </Router>
   );
 };
 
